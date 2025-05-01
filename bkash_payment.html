@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans Bengali', sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 420px;
+      margin: 40px auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px;
+    }
+    .header {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .header h2 {
+      font-size: 28px;
+      margin: 0;
+      color: #333;
+    }
+    .header p {
+      font-size: 14px;
+      color: #888;
+    }
+    .payment-box {
+      background-color: #e6005c;
+      color: white;
+      border-radius: 10px;
+      padding: 20px;
+    }
+    .payment-box p {
+      margin: 10px 0;
+      font-size: 15px;
+    }
+    .wallet-info {
+      background-color: #fff;
+      color: #000;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+    .wallet-info strong {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+    .wallet-info .number {
+      font-size: 18px;
+      color: #0066cc;
+      font-weight: bold;
+    }
+    .wallet-info .amount {
+      font-size: 18px;
+      color: #27ae60;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 12px;
+      margin-top: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    .submit-button {
+      width: 100%;
+      background-color: #d63031;
+      color: white;
+      padding: 14px;
+      font-size: 16px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .submit-button:hover {
+      background-color: #b52d29;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="header">
+    <h2>Payment</h2>
+    <p>2/26/2025, 12:13:34 AM</p>
+  </div>
+
+  <div class="payment-box">
+    <p>অনুগ্রহ করে একই পরিমাণ স্থানান্তর করুন এবং অর্থ ফেরতের সমস্যা এড়াতে সঠিক trxID প্রদান করুন।</p>
+    <p><strong>এই বিকাশ এজেন্ট অ্যাকাউন্টে অর্থ পাঠাতে ক্যাশ আউট ব্যবহার করুন।</strong></p>
+
+    <div class="wallet-info">
+      <strong>ওয়ালেট নম্বর:</strong>
+      <div class="number">01645473451</div>
+      <strong>পরিমাণ:</strong>
+      <div class="amount">৳500</div>
+    </div>
+
+    <label for="trx">লেনদেন আইডি (trxID) লিখুন:</label>
+    <input type="text" id="trx" placeholder="trxID লিখুন...">
+
+    <button class="submit-button">জমা দিন</button>
+  </div>
+</div>
+
+</body>
+</html>
